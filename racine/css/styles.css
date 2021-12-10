@@ -1032,11 +1032,17 @@ footer li span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 0;
 }
 
 .restaurant__bloc {
-  width: 100%;
+  width: 300px;
 }
 
 .restaurant__bloc__bloc-part {

@@ -1031,11 +1031,13 @@ footer li span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   margin: 0;
 }
 
 .restaurant__bloc {
-  width: 100%;
+  width: 300px;
 }
 
 .restaurant__bloc__bloc-part {

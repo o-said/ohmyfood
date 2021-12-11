@@ -117,7 +117,6 @@ text-decoration: none;
     opacity: 0;      
     }
 }
-
 /*--------------------------------------------------------------------------------------------------------*/          
 .header-menu{
     display:flex;
@@ -125,7 +124,7 @@ text-decoration: none;
         text-align: center;  
         width:100%;
         font-family:$Logo;
-        font-size:30px;
+        font-size:35px;
         font-weight: 100;
         padding-bottom:10px;
         color:#000;
@@ -141,13 +140,30 @@ text-decoration: none;
 }
 .map{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: center;align-items: center;
     padding:15px 20px 15px 0;
     background-color: #eaeaea;
     box-shadow: inset 0px 3px 3px 0px #D5D5D5;   
     & a{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width:50%;
     color:#101010;
-    font-size:20px;}
+    font-size:13px;
+    & h2{
+        padding-left:20px;
+        font-family:sans-serif;
+        text-transform: capitalize;
+        font-weight: 500;
+    }
+    & .fas{
+        margin:auto 0;
+        font-size: 15px;
+    }
+
+}
 }
 p{    
     padding-bottom:15px;
@@ -400,7 +416,6 @@ footer{
     }  
 }
 /*----------------------------------------------partie restaurant----------------------------------------------------------------------*/
-
 .header-restaurant{
     display: flex;
     justify-content: space-around;
@@ -454,7 +469,6 @@ footer{
             font-size: 25px;
             padding-right: 40px;            
         }
-
     }
 }
 .restaurant-logo{           
@@ -464,7 +478,6 @@ footer{
         padding:10px;
         color:#000;
 }
-
 .restaurant{
     display: flex;
     flex-direction: column;
@@ -567,9 +580,7 @@ footer{
         left: 16px;
         border-radius: 50%;
         width: 20px;
-        height: 20px;
-        
-        /*transition: transform 3000ms 100ms ease-in-out alternate;*/
+        height: 20px;        
     }    
     &__icon {
             color:$Tertiaire;
@@ -592,11 +603,7 @@ footer{
         opacity: 1;
         transform: scaleX(1); }
     .part-list:hover  .fas   {
-        transform: rotate(360deg); }
-
-    
-
-
+        transform: rotate(360deg); }  
 /*--------------------------------------------------------------------------------------------------------------------------------------------------*/ 
 /* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN TABLETTE*/
 @media screen and (min-width: 710px)  {
@@ -613,19 +620,15 @@ footer{
         }        
         &__item  .choix h3 .fas {
             padding-left: 30px;
-        }
-        &__item .choix h3{
-            
+            margin:0px 10px;
+        }        
+        &__item .choix h3{            
             font-size:20px;
         }
         &__item .icon_numero{
             bottom: 4em;
         }        
-    }
-    /*.anim__container{
-        width:35px;
-    }*/
-    
+    }    
     .bloc-menu{
         width:380px;
         text-align: center;
@@ -674,7 +677,6 @@ footer{
             }      
         }
     }
-
 }
 /*------------- MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN DESKTOP------------------*/
 @media screen and (min-width: 1024px) {
@@ -687,9 +689,7 @@ footer{
         margin:auto 0;
         font-size:30px;
     }
-    &__item{
-        margin:0px 10px;
-    }     
+        
     &__item .icon_numero{
         bottom:4em;       
     }
@@ -727,8 +727,6 @@ footer{
     }
     }
 }
-
-
 .rest-header{      
     &__title{
         
@@ -736,7 +734,7 @@ footer{
             margin-left: 40px;
         }
     }
-    }
+}
 .restaurant{
         display: flex;  
         margin:0;
@@ -751,11 +749,8 @@ footer{
             & .select p{
             font-size: 11px;
         }    
-        }
-        
-        
-        
-    }
+        }      
+}
 br {
     display: none;
     }

@@ -552,27 +552,7 @@ p {
           align-items: center;
 }
 
-.bloc-menu__menu .description .icon .heart-icon:hover > .fas {
-  -webkit-animation: appear 900ms   ease-in-out;
-          animation: appear 900ms   ease-in-out;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-}
-
-.bloc-menu__menu .description .icon .heart-icon:hover > .far {
-  -webkit-animation: disappear 1000ms   ease-in-out;
-          animation: disappear 1000ms   ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
-}
-
-.bloc-menu__menu .description .icon .fas {
+.bloc-menu__menu .description .icon .heart-icon .fas {
   opacity: 0;
   z-index: 1;
   position: absolute;
@@ -588,12 +568,26 @@ p {
   -webkit-text-fill-color: transparent;
 }
 
-.bloc-menu__menu .description .icon .far {
+.bloc-menu__menu .description .icon .heart-icon .far {
   color: #101010;
   z-index: 1;
   font-size: 30px;
   opacity: 1;
   cursor: pointer;
+}
+
+.bloc-menu__menu .description .icon .heart-icon:hover > .fas {
+  -webkit-animation: appear 1000ms   ease-in-out;
+          animation: appear 1000ms   ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.bloc-menu__menu .description .icon .heart-icon:hover > .far {
+  -webkit-animation: disappear 1000ms  ease-in-out;
+          animation: disappear 1000ms  ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 footer {
@@ -623,7 +617,7 @@ footer ul {
 
 footer li {
   padding-bottom: 10px;
-  color: white;
+  color: #fff;
 }
 
 footer li a {
@@ -1023,7 +1017,7 @@ footer li span {
     font-size: 30px;
   }
   .bloc-menu {
-    width: 100%;
+    width: 100vw;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;

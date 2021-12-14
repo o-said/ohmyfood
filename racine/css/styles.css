@@ -333,7 +333,7 @@ p {
   margin: 0 auto 55px auto;
   width: 250px;
   height: 50px;
-  background: black;
+  background: #000;
   background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   border-radius: 50px;
@@ -589,7 +589,7 @@ p {
 }
 
 .bloc-menu__menu .description .icon .far {
-  color: black;
+  color: #101010;
   z-index: 1;
   font-size: 30px;
   opacity: 1;
@@ -653,7 +653,7 @@ footer li span {
 }
 
 .header-restaurant .arrow a {
-  color: black;
+  color: #000;
 }
 
 .header-restaurant .arrow a .fas {
@@ -788,7 +788,7 @@ footer li span {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  background: #FFF;
+  background: #fff;
   width: 100%;
   -webkit-box-shadow: 2px 4px 8px 3px #e4e4e7;
           box-shadow: 2px 4px 8px 3px #e4e4e7;
@@ -883,7 +883,7 @@ footer li span {
 }
 
 .anim__circle {
-  background: #FFF;
+  background: #fff;
   position: absolute;
   top: 32%;
   left: 16px;

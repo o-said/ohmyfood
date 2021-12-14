@@ -527,7 +527,21 @@ footer{
             margin-bottom: 20px;
             border-radius: 20px;
             padding: 5px 0px 8px 15px;
-            line-height: 20px;                
+            line-height: 20px;             
+                &:hover {
+                    cursor: pointer;                    
+                    & .price{
+                        transform: translateX(-70px);                        
+                    }
+                    & .anim__container{
+                        opacity: 1;
+                        transform: scaleX(1);                        
+                    }
+                    & .fas{
+                        transform: rotate(360deg);
+                        transition:transform 800ms 200ms ease-in-out ;
+                    }
+                }            
                 & .select{                                    
                     & h3{                        
                         margin-top: 5px;
@@ -550,7 +564,7 @@ footer{
                             right: 10px;               
                             transform-origin: right;
                             font-weight: bold; 
-                            transition:transform 300ms  linear ;
+                            transition:transform 1000ms 200ms ease-in-out ;                            
                         }
                     }
         }    
@@ -575,7 +589,7 @@ footer{
         opacity: 0;
         transform-origin: right;
         transform: scaleX(0);
-        transition: opacity 1000ms, transform 400ms 50ms linear; }
+        transition: opacity 3000ms , transform 800ms 200ms linear; }
     &__circle {
         background: #FFF;
         position: absolute;
@@ -590,23 +604,11 @@ footer{
             font-size: 15px;
             padding:2px;
             .fas{
-                transition:transform 400ms 200ms ease-in-out ;
+                transition:transform 800ms 200ms ease-in-out ;
             }           
         }
 } 
-.part-list:hover{
-    background: rgba(147, 86, 220, 0.15);
-    cursor: pointer;
-}
-    .part-list:hover .price {
-        transform: translateX(-70px); }
-    .part-list:hover .select {
-        width: 50%; }
-    .part-list:hover .anim__container {
-        opacity: 1;
-        transform: scaleX(1); }
-    .part-list:hover  .fas   {
-        transform: rotate(360deg); }  
+
 /*--------------------------------------------------------------------------------------------------------------------------------------------------*/ 
 /* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN TABLETTE*/
 @media screen and (min-width: 710px)  {

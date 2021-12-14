@@ -798,6 +798,30 @@ footer li span {
   line-height: 20px;
 }
 
+.restaurant .part-list:hover {
+  cursor: pointer;
+}
+
+.restaurant .part-list:hover .price {
+  -webkit-transform: translateX(-70px);
+          transform: translateX(-70px);
+}
+
+.restaurant .part-list:hover .anim__container {
+  opacity: 1;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.restaurant .part-list:hover .fas {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 800ms 200ms ease-in-out;
+  transition: -webkit-transform 800ms 200ms ease-in-out;
+  transition: transform 800ms 200ms ease-in-out;
+  transition: transform 800ms 200ms ease-in-out, -webkit-transform 800ms 200ms ease-in-out;
+}
+
 .restaurant .part-list .select h3 {
   margin-top: 5px;
   overflow: hidden;
@@ -824,10 +848,10 @@ footer li span {
   -webkit-transform-origin: right;
           transform-origin: right;
   font-weight: bold;
-  -webkit-transition: -webkit-transform 300ms  linear;
-  transition: -webkit-transform 300ms  linear;
-  transition: transform 300ms  linear;
-  transition: transform 300ms  linear, -webkit-transform 300ms  linear;
+  -webkit-transition: -webkit-transform 1000ms 200ms ease-in-out;
+  transition: -webkit-transform 1000ms 200ms ease-in-out;
+  transition: transform 1000ms 200ms ease-in-out;
+  transition: transform 1000ms 200ms ease-in-out, -webkit-transform 1000ms 200ms ease-in-out;
 }
 
 .trait {
@@ -852,10 +876,10 @@ footer li span {
           transform-origin: right;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  -webkit-transition: opacity 1000ms, -webkit-transform 400ms 50ms linear;
-  transition: opacity 1000ms, -webkit-transform 400ms 50ms linear;
-  transition: opacity 1000ms, transform 400ms 50ms linear;
-  transition: opacity 1000ms, transform 400ms 50ms linear, -webkit-transform 400ms 50ms linear;
+  -webkit-transition: opacity 3000ms , -webkit-transform 800ms 200ms linear;
+  transition: opacity 3000ms , -webkit-transform 800ms 200ms linear;
+  transition: opacity 3000ms , transform 800ms 200ms linear;
+  transition: opacity 3000ms , transform 800ms 200ms linear , -webkit-transform 800ms 200ms linear;
 }
 
 .anim__circle {
@@ -875,35 +899,10 @@ footer li span {
 }
 
 .anim__icon .fas {
-  -webkit-transition: -webkit-transform 400ms 200ms ease-in-out;
-  transition: -webkit-transform 400ms 200ms ease-in-out;
-  transition: transform 400ms 200ms ease-in-out;
-  transition: transform 400ms 200ms ease-in-out, -webkit-transform 400ms 200ms ease-in-out;
-}
-
-.part-list:hover {
-  background: rgba(147, 86, 220, 0.15);
-  cursor: pointer;
-}
-
-.part-list:hover .price {
-  -webkit-transform: translateX(-70px);
-          transform: translateX(-70px);
-}
-
-.part-list:hover .select {
-  width: 50%;
-}
-
-.part-list:hover .anim__container {
-  opacity: 1;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
-
-.part-list:hover .fas {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 800ms 200ms ease-in-out;
+  transition: -webkit-transform 800ms 200ms ease-in-out;
+  transition: transform 800ms 200ms ease-in-out;
+  transition: transform 800ms 200ms ease-in-out, -webkit-transform 800ms 200ms ease-in-out;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------*/

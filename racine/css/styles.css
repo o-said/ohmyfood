@@ -876,10 +876,10 @@ footer li span {
           transform-origin: right;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  -webkit-transition: opacity 3000ms , -webkit-transform 800ms 200ms linear;
-  transition: opacity 3000ms , -webkit-transform 800ms 200ms linear;
-  transition: opacity 3000ms , transform 800ms 200ms linear;
-  transition: opacity 3000ms , transform 800ms 200ms linear , -webkit-transform 800ms 200ms linear;
+  -webkit-transition: opacity 2500ms , -webkit-transform 800ms 200ms linear;
+  transition: opacity 2500ms , -webkit-transform 800ms 200ms linear;
+  transition: opacity 2500ms , transform 800ms 200ms linear;
+  transition: opacity 2500ms , transform 800ms 200ms linear , -webkit-transform 800ms 200ms linear;
 }
 
 .anim__circle {

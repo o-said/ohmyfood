@@ -1,5 +1,5 @@
-@mixin btn-pos {
-    .presentation__boutton {
+@mixin btn-pos{
+    .presentation__boutton{
         margin:0 auto 55px auto;
         width:250px;
         height:50px;
@@ -12,12 +12,13 @@
             vertical-align: middle;
             line-height: 50px;
             color:$white;
-            text-align: center;        
+            text-align: center;
+        }
         & p{
             padding: 0 10px;
         }
     }
-}
+
 @mixin tablet {
     @media (min-width: 710px) { @content;}
 }

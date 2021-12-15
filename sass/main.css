@@ -306,7 +306,7 @@ body, html {
   }
 }
 
-@media (min-with: 1024px) {
+@media (min-width: 1024px) {
   .bloc-menu__menu .description .icon .heart-icon .far {
     right: 0.95em;
     bottom: 1.2em;
@@ -394,7 +394,7 @@ body, html {
   font-size: 20px;
 }
 
-@media (min-with: 1024px) {
+@media (min-width: 1024px) {
   .menu-header {
     text-align: center;
     font-size: 30px;
@@ -544,7 +544,7 @@ footer li span {
   }
 }
 
-@media (min-width: 710px) and (min-with: 1024px) {
+@media (min-width: 710px) and (min-width: 1024px) {
   .bloc-menu {
     width: 100vw;
     text-align: center;
@@ -569,7 +569,7 @@ footer li span {
   }
 }
 
-@media (min-with: 1024px) {
+@media (min-width: 1024px) {
   .bloc-menu__menu {
     width: 380px;
   }
@@ -600,7 +600,7 @@ footer li span {
   }
 }
 
-@media (min-with: 1024px) {
+@media (min-width: 1024px) {
   .bloc-menu__menu .new {
     right: 1em;
   }
@@ -687,7 +687,7 @@ footer li span {
   }
 }
 
-@media (min-with: 1024px) {
+@media (min-width: 1024px) {
   .fonctionnement {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -709,7 +709,7 @@ footer li span {
   font-size: 20px;
 }
 
-@media (min-with: 1024px) {
+@media (min-width: 1024px) {
   .fonctionnement h4 {
     margin: auto 0;
     font-size: 30px;
@@ -781,7 +781,7 @@ footer li span {
   font: 10px Arial, sans-serif;
 }
 
-@media (min-with: 1024px) {
+@media (min-width: 1024px) {
   .fonctionnement__item .icon_numero {
     bottom: 4em;
   }

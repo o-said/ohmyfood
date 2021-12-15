@@ -1,0 +1,13 @@
+.menu-header{
+    padding: 0 20px ;
+    font-size:20px;
+    text-align: left;
+    & h4{
+        padding:55px 30px 23px 25px;
+        font-size:20px;
+        }
+        @include desktop {
+            text-align:center;
+            font-size:30px;
+        }
+} 

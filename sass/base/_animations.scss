@@ -1,0 +1,13 @@
+/*definition de keyframes*/
+
+
+.restaurant__bloc-part section:nth-child(1) {
+    animation: present 700ms  ease-in-out; }
+.restaurant__bloc-part section:nth-child(2) {
+    animation: present 700ms 500ms  ease-in-out; }
+.restaurant__bloc-part section:nth-child(3) {
+    animation: present 700ms 900ms  ease-in-out; }
+.restaurant__bloc-part section:nth-child(4) {
+    animation: present 700ms 1200ms  ease-in-out; }    
+
+

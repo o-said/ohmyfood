@@ -1,0 +1,51 @@
+.bloc-menu__menu .description {
+    & .icon{
+        width:20%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        & .heart-icon{
+            width:43px;
+            height:43px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            &  .fas{                                                 
+                opacity:0;
+                z-index: 1;                   
+                position: absolute;
+                cursor:pointer;
+                transform: scale(0);
+                transform-origin: 50% bottom;
+                font-size: 30px;
+                background: -webkit-gradient(linear, left top, left bottom, from($Primaire), to($Secondaire));
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;                    
+            }   
+            & .far{
+                color:$tblack;
+                z-index: 1;
+                font-size: 30px;
+                opacity:1; 
+                cursor: pointer;  
+                @include tablet {
+                    right:1em;
+                    bottom:1em;
+                }   
+                @include desktop {
+                    right:0.95em;
+                    bottom:1.2em;
+                }              
+            } 
+            &:hover > .fas{
+                animation: appear 1000ms   ease-in-out;
+                animation-fill-mode: forwards;                                          
+            }
+            &:hover >.far {
+                animation: disappear 1000ms  ease-in-out;
+                animation-fill-mode: forwards;                                                 
+            }                   
+        }
+    }
+}

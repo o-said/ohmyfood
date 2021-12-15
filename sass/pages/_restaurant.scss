@@ -1,0 +1,111 @@
+.restaurant{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color:$grey ;    
+    padding-bottom:  30px ;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px; 
+    @include tablet {
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+            &__title{
+                margin-left: 20px;
+                & h1{           
+                text-transform: uppercase;
+                font-family:'shrikhand', sans-serif;
+                font-size: 20px;
+                margin-left: 15px;
+                }       
+            }
+    &__bloc-part{        
+        box-sizing: border-box;        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        opacity: 1;
+        transform: translateY(0);  
+        margin: 0 15px;   
+        @include tablet {
+            margin:0 5px;
+        }  
+        
+        & h2{padding-top: 20px;
+            font-size: 15px;
+            text-align:left
+        }
+        & span{
+            font-family: sans-serif;
+            text-transform: uppercase;
+            font-weight: 100;
+        }
+        & .part-list {
+            display: flex;
+            justify-content: space-between;
+            position:relative;
+            background: $white;
+            width: 100%;
+            box-shadow: 2px 4px 8px 3px #e4e4e7;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            padding: 5px 0px 8px 15px;
+            line-height: 20px;  
+            @include tablet {
+                font-size: 25px;
+            }           
+                &:hover {
+                    cursor: pointer;                    
+                    & .price{
+                        transform: translateX(-70px);                        
+                    }
+                    & .anim__container{
+                        opacity: 1;
+                        transform: scaleX(1);                        
+                    }
+                    & .fas{
+                        transform: rotate(360deg);
+                    }
+                }            
+                & .select{                                    
+                    & h3{                        
+                        margin-top: 5px;
+                        overflow:hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        font-size:13px;
+                        @include tablet {
+                            font-size:17px;   
+                        }
+                    }
+                    & p{
+                        font-size: 13px;
+                        padding-bottom: 5px;
+                        overflow:hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        @include tablet {
+                            font-size: 15px;
+                        }
+                        @include tablet {
+                            font-size: 11px;
+                        }
+                        span {
+                            padding-right:  5px;
+                        }
+                        &  .price{
+                            position: absolute;
+                            right: 10px;               
+                            transform-origin: right;
+                            font-weight: bold; 
+                            transition:transform 1000ms 200ms ease-in-out ;                            
+                        }
+                    }
+            }    
+        }    
+    } 
+}

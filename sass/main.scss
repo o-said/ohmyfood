@@ -1,0 +1,48 @@
+@import 'abstracts/functions';
+@import 'abstracts/keyframes';
+@import 'abstracts/mixins';
+@import 'abstracts/placeholders';
+@import 'abstracts/variables';
+
+@import 'base/animations';
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'components/boutton';
+@import 'components/header-restaurant-arrow';
+@import 'components/heart-icon';
+@import 'components/logo-restaurant';
+@import 'components/map-pos';
+@import 'components/menu-header-accueil';
+
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/loader';
+
+@import 'pages/anim-restaurant';
+@import 'pages/bloc-menu-accueil';
+@import 'pages/fonctionnement-pos';
+@import 'pages/header-menu-accueil';
+@import 'pages/header-restaurant';
+@import 'pages/presentation-pos';
+@import 'pages/rest-header-img';
+@import 'pages/restaurant';
+@import 'pages/trait';
+
+@import 'vendors/normalize';
+
+/*ordre d'importation*/
+/*abstracts*/
+/*@import 'abstracts/variables';*/
+
+/*vendors*/
+
+/*base*/
+
+/*layout*/
+
+/*components*/
+
+/*pages*/
+
+/*themes*/

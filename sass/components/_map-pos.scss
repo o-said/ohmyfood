@@ -1,0 +1,26 @@
+.map{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;align-items: center;
+    padding:15px 20px 15px 0;
+    background-color: #eaeaea;
+    box-shadow: inset 0px 3px 3px 0px #D5D5D5;   
+    & a{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width:50%;
+    color:$tblack;
+    font-size:13px;
+    & h2{
+        padding-left:20px;
+        font-family:sans-serif;
+        text-transform: capitalize;
+        font-weight: 500;
+        }
+    & .fas{
+        margin:auto 0;
+        font-size: 15px;
+        }
+    }
+}

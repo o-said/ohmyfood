@@ -1,15 +1,11 @@
 .bloc-menu__menu .description {
     & .icon{
         width:20%;
-        display:flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
         & .heart-icon{
             width:43px;
             height:43px;
-            display:flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-center;
             &  .fas{                                                 
                 opacity:0;
                 z-index: 1;                   

@@ -3,9 +3,7 @@
     padding-top: 20px; 
     padding-bottom: 20px;
     background-color: $grey;  
-    &__boutton{
-        @include presentation__boutton-pos;
-    }   
+      
     & h2{
         padding: 20px 65px;
         font-size:25px;
@@ -21,5 +19,17 @@
         @include tablet {
             font-size: 30px;
         }
+    }
+    &__button{
+        & .btn{
+            vertical-align: middle;
+            line-height: 50px;
+            color:$white;
+            text-align: center;
+        
+        & p{
+            padding: 0 10px;
+        }
+    }
     }
 }    

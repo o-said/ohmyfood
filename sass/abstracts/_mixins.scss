@@ -3,6 +3,10 @@
     justify-content: center;
     align-items: center;
 }
+@mixin case-shadow{
+    box-shadow: 2px 4px 8px 3px #e4e4e7;
+    border-radius: 20px;
+}
 
 @mixin presentation__button-pos{    
         margin:0 auto 55px auto;

@@ -727,10 +727,10 @@ footer li span {
           align-items: center;
   padding: 20px 20px;
   background-color: #f6f6f6;
-  border-radius: 15px;
+  -webkit-box-shadow: 2px 4px 8px 3px #e4e4e7;
+          box-shadow: 2px 4px 8px 3px #e4e4e7;
+  border-radius: 20px;
   margin: 20px 0;
-  -webkit-box-shadow: 5px 5px 9px -2px #cfcfcf;
-          box-shadow: 5px 5px 9px -2px #cfcfcf;
   cursor: pointer;
 }
 
@@ -1006,8 +1006,8 @@ footer li span {
   width: 100%;
   -webkit-box-shadow: 2px 4px 8px 3px #e4e4e7;
           box-shadow: 2px 4px 8px 3px #e4e4e7;
-  margin-bottom: 20px;
   border-radius: 20px;
+  margin-bottom: 20px;
   padding: 5px 0px 8px 15px;
   line-height: 20px;
 }

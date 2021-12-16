@@ -47,9 +47,9 @@
             align-items: center;
             padding: 20px 20px;
             background-color: $grey;
-            border-radius: 15px;            
+            @include case-shadow;            
             margin:20px 0;         
-            box-shadow: 5px 5px 9px -2px #cfcfcf;
+            
             cursor: pointer;
             & .fas{
                 padding-left: 20px;

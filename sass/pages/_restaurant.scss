@@ -48,9 +48,9 @@
             position:relative;
             background: $white;
             width: 100%;
-            box-shadow: 2px 4px 8px 3px #e4e4e7;
+            @include case-shadow;
             margin-bottom: 20px;
-            border-radius: 20px;
+            
             padding: 5px 0px 8px 15px;
             line-height: 20px;  
             @include tablet {

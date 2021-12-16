@@ -237,7 +237,7 @@ body, html {
   font-weight: 800;
 }
 
-.bloc-menu__menu .description .icon {
+.icon {
   width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -250,7 +250,7 @@ body, html {
           align-items: center;
 }
 
-.bloc-menu__menu .description .icon .heart-icon {
+.icon .heart-icon {
   width: 43px;
   height: 43px;
   display: -webkit-box;
@@ -264,7 +264,7 @@ body, html {
           align-items: center;
 }
 
-.bloc-menu__menu .description .icon .heart-icon .fas {
+.icon .heart-icon .fas {
   opacity: 0;
   z-index: 1;
   position: absolute;
@@ -280,7 +280,7 @@ body, html {
   -webkit-text-fill-color: transparent;
 }
 
-.bloc-menu__menu .description .icon .heart-icon .far {
+.icon .heart-icon .far {
   color: #101010;
   z-index: 1;
   font-size: 30px;
@@ -289,27 +289,27 @@ body, html {
 }
 
 @media (min-width: 710px) {
-  .bloc-menu__menu .description .icon .heart-icon .far {
+  .icon .heart-icon .far {
     right: 1em;
     bottom: 1em;
   }
 }
 
 @media (min-width: 1024px) {
-  .bloc-menu__menu .description .icon .heart-icon .far {
+  .icon .heart-icon .far {
     right: 0.95em;
     bottom: 1.2em;
   }
 }
 
-.bloc-menu__menu .description .icon .heart-icon:hover > .fas {
+.icon .heart-icon:hover > .fas {
   -webkit-animation: appear 1000ms   ease-in-out;
           animation: appear 1000ms   ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-.bloc-menu__menu .description .icon .heart-icon:hover > .far {
+.icon .heart-icon:hover > .far {
   -webkit-animation: disappear 1000ms  ease-in-out;
           animation: disappear 1000ms  ease-in-out;
   -webkit-animation-fill-mode: forwards;

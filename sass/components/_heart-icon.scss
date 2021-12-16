@@ -1,5 +1,4 @@
-.bloc-menu__menu .description {
-    & .icon{
+ .icon{
         width:20%;
         @include flex-center;
         & .heart-icon{
@@ -44,4 +43,3 @@
             }                   
         }
     }
-}

@@ -1,19 +1,20 @@
 .restaurant{
     display: flex;
     flex-direction: column;
-    position: relative;
+    
     background-color:$grey ;    
-    padding-bottom:  30px ;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px; 
+    padding-bottom:  30px ;     
     @include tablet {
-        width:100%;
+        width:99%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }    
+    } 
+    &__bloc{
+        width:33%;
+    }       
         &__title{
-            margin-left: 20px;
+            
             & h1{           
             text-transform: uppercase;
             font-family:'shrikhand', sans-serif;
@@ -21,7 +22,8 @@
             margin-left: 15px;
             }       
         }
-        &__bloc-part{        
+        &__bloc-part{    
+            width:100%;    
             box-sizing: border-box;        
             display: flex;
             flex-direction: column;
@@ -47,29 +49,38 @@
             justify-content: space-between;
             position:relative;
             background: $white;
-            width: 100%;
+            width: 30vw;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
             @include case-shadow;
-            margin-bottom: 20px;
-            
+            margin-bottom: 20px;            
             padding: 5px 0px 8px 15px;
             line-height: 20px;  
             @include tablet {
-                font-size: 25px;
+            font-size: 25px;            
             }           
                 &:hover {
-                    cursor: pointer;                    
+                    cursor: pointer;   
+                    & .select{
+                        width:80% ;
+                        transition: width 800ms  ease-in-out;
+                    }                 
                     & .price{
                         transform: translateX(-70px);                        
                     }
                     & .anim__container{
                         opacity: 1;
-                        transform: scaleX(1);                        
-                    }
+                        transform: translateX(-50px);   
+                        transition:transform 1000ms ease-in-out;                     
+                    }                  
                     & .fas{
                         transform: rotate(360deg);
                     }
                 }            
-                & .select{                                    
+                & .select{ 
+                        width:100%;
+                        transition: width 1000ms  ease-in-out;
                     & h3{                        
                         margin-top: 5px;
                         overflow:hidden;
@@ -100,7 +111,8 @@
                             right: 10px;               
                             transform-origin: right;
                             font-weight: bold; 
-                            transition:transform 1000ms 200ms ease-in-out ;                            
+                            transition:transform 1000ms 200ms ease-in-out ;    
+                                                    
                         }
                     }
             }    

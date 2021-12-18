@@ -1,17 +1,19 @@
 .anim{
     &__container {
         background: $Tertiaire;
-        position: relative;
+        position: absolute;
         box-shadow: 2px 4px 8px 3px #e4e4e7;
         border-radius: 0 20px 20px 0;
-        height: 125%;
+        height: 100%;
         width: 50px;
         margin-top: -5px;
         margin-bottom: -8px;
+        right:-50px;
+        top:0;
         opacity: 0;
-        transform-origin: right;
-        transform: scaleX(0);
-        transition: opacity 2000ms , transform 800ms 200ms linear; }
+        /*transform-origin: right;
+        transform: scaleX(0);*/
+        transition: opacity 2000ms ; transition:transform 800ms 200ms linear; }
     &__circle {
         background: $white;
         position: absolute;
@@ -22,10 +24,12 @@
         height: 20px;        
     }    
     &__icon {
+            width:15px;
             color:$Tertiaire;
             font-size: 15px;
             padding:2px;
-            .fas{
+            transform-origin: 150% 50%;
+            .fas{                
                 transition:transform 800ms 200ms ease-in-out ;
             }           
         }

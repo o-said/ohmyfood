@@ -2,20 +2,26 @@
     position:relative;
     width:100%;
     height: 255px;
-    & img{  
-        object-fit: cover;      
+    
+    &__img{  
+        position: absolute;
+            
         top:0;
         left:0;
         width:100%;
-        height:240px;    
+        height:100%;    
+        & img {
+            width:100%;
+            height: 100%;
+            object-fit: cover; 
+        }
     }
     & .rest-header__title {
         display: flex;        
         justify-content: space-between;
         align-items: center;      
-        position: absolute;
-        width:100%;
-        height:100px;
+        z-index: 1;        
+        height:80px;
         top:70%;
         left:0;
         background-color: $grey;

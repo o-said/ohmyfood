@@ -2,13 +2,12 @@ body{
     background-color: $grey;
     font-family: 'Roboto', sans-serif;
     font-family: 'Shrikhand', cursive;
-    position: relative;
-    z-index: 1;     
+        
 }
 *{
 margin:0;
 padding:0;
-box-sizing:border-box;
+box-sizing:content-box;
 list-style-type: none;
 font-family: "Roboto",sans-serif;
 text-decoration: none;

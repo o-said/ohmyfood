@@ -3,6 +3,12 @@
         position: absolute;    
         font-size: 20px;
         left:20px;
+        @include tablet{
+            font-size:30px;
+        }
+        @include desktop{
+            font-size: 32px;
+        }
         & a{
             color: $black;
             & .fas{

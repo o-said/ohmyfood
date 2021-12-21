@@ -5,6 +5,7 @@
             width:43px;
             height:43px;
             @include flex-center;
+            @include button-val;
             &  .fas{                                                 
                 opacity:0;
                 z-index: 1;                   
@@ -25,10 +26,12 @@
                 opacity:1; 
                 cursor: pointer;  
                 @include tablet {
+                    font-size: 25px;
                     right:1em;
                     bottom:1em;
                 }   
                 @include desktop {
+                    font-size: 30px;
                     right:0.95em;
                     bottom:1.2em;
                 }              

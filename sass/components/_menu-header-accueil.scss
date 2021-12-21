@@ -4,10 +4,13 @@
     text-align: left;
     & h4{
         padding:55px 30px 23px 25px;
-        font-size:20px;
+        font-size:$f-s-titre-category;
+        @include tablet{
+            text-align: center;
+            font-size: $f-s-titre-category-tablet;
+        }@include desktop{
+            font-size: $f-s-titre-category-desktop;
         }
-        @include desktop {
-            text-align:center;
-            font-size:30px;
-        }
+        
+    }    
 } 

@@ -1,5 +1,8 @@
 .trait{
     width:40px;
-    border:2px solid $Tertiaire;
-    margin:5px 0 15px 0;      
+    border:1.5px solid $Tertiaire;
+    margin:5px 0 15px 0;   
+    @include desktop{
+        width:50px;
+    }   
 }

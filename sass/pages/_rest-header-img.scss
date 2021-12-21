@@ -4,8 +4,7 @@
     height: 255px;
     
     &__img{  
-        position: absolute;
-            
+        position: absolute;            
         top:0;
         left:0;
         width:100%;
@@ -30,19 +29,23 @@
         & h1{
             margin-left:20px;
             font-family:'shrikhand', sans-serif;
-            font-size: 23px;
-            padding: 60px 0;
+            font-size: 28px;
+            
             & span{
                 text-transform:uppercase;
                 font-family: 'Shrikhand',sans-serif;
             }
         }
         & .far{
-            font-size: 25px;
-            padding-right: 40px;     
+            font-size: 25px;                
             @include tablet {
-                margin-left: 40px;
+                font-size: 30px;
             }       
+        }
+        & .fas{
+            @include tablet {
+                font-size: 30px;
+            } 
         }
     }
 }

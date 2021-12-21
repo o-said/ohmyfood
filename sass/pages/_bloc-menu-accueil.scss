@@ -3,21 +3,20 @@
     @include tablet{
         text-align: center;
         margin:0 auto;
+        display:flex;
         @include desktop {
-            width:100vw;
+            
             text-align: center;
-            display:flex;
+            
         }
     }
     &__menu{
         position:relative;
         border-radius: 10px;
-        width:90%;
-        height:296px;
-        margin:0 auto ;   
-        margin-bottom: 15px; 
+        width:90%;        
+        margin:20px auto ;        
         @include tablet{
-            width:380px;
+            width:260px;
         }
         @include desktop {
             width:380px;
@@ -51,7 +50,13 @@
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             width:100%;
-            height:175px;                
+            height:175px;   
+            @include tablet{
+                height:120px;
+            } 
+            @include desktop{
+                height:175px;
+            }            
         } 
         & .description{
             background-color: $white;
@@ -61,15 +66,27 @@
             & .name{
                 width:80%;                
                 & h2{
-                    padding-top: 20px;
-                    padding-bottom: 10px;
-                    padding-left: 15px;
+                    padding:20px 0 10px 15px;
+                    font-size: $f-s-titre;
+                    @include tablet{
+                        font-size: $f-s-titre-tablet;
+                    }
+                    @include desktop{
+                        font-size: $f-s-titre-desktop;
+                    }
                     color:$tblack;                
                 & span{
                     text-transform: uppercase;
                     }
                 } 
                 & h3{
+                    font-size: $f-s-sous-titre;
+                    @include tablet{
+                        font-size: $f-s-sous-titre-tablet;
+                    }
+                    @include desktop{
+                        font-size: $f-s-sous-titre-desktop
+                    }
                     padding-bottom:20px;
                     padding-left: 15px;
                     color:$tblack;
@@ -78,9 +95,7 @@
                 }  
             }   
             & button{
-                background-color: Transparent;
-                background-repeat:no-repeat;
-                border: none;
+                @include button-val;
             }    
                         
         }

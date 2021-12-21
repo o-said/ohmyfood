@@ -5,22 +5,29 @@
     background-color: $grey;  
       
     & h2{
-        padding: 20px 65px;
-        font-size:25px;
+        padding: 20px 0px;
+        font-size:$f-s-titre;
         text-align: center;
         @include tablet {
-            font-size: 30px;
+            font-size: $f-s-titre-tablet;
+        }
+        @include desktop{
+            font-size: $f-s-titre-desktop;
         }
     }
     & h3{
-        padding:0 20px 35px 20px;
-        font-size: 20px;
+        padding:0 10px 35px 10px;
+        font-size: $f-s-sous-titre;
         font-weight: 200;
         @include tablet {
-            font-size: 30px;
+            font-size: $f-s-sous-titre-tablet;
+        }
+        @include desktop{
+            font-size:$f-s-sous-titre-desktop;
         }
     }
     &__button{
+        @include button-pos;
         & .btn{
             vertical-align: middle;
             line-height: 50px;
@@ -29,6 +36,13 @@
         
         & p{
             padding: 0 10px;
+            font-size: $f-s-titre;
+            @include tablet{
+                font-size: $f-s-titre-tablet;
+            }
+            @include desktop{
+                font-size:$f-s-titre-desktop;
+            }
         }
     }
     }

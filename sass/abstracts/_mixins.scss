@@ -3,12 +3,17 @@
     justify-content: center;
     align-items: center;
 }
+@mixin flex-sb-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 @mixin case-shadow{
     box-shadow: 2px 4px 8px 3px #e4e4e7;
     border-radius: 20px;
 }
 
-@mixin presentation__button-pos{    
+@mixin button-pos{    
         margin:0 auto 55px auto;
         width:250px;
         height:50px;
@@ -17,9 +22,17 @@
         border-radius: 50px;
         box-shadow:0px 3px 8px #808080;    
 }
+@mixin button-val{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+}
+@mixin font-size-titre{
+    font-zize:.8em;
+}
 
 @mixin tablet {
-    @media (min-width: 710px) { @content;}
+    @media (min-width: 800px) { @content;}
 }
 @mixin desktop {
     @media (min-width: 1024px) { @content;}

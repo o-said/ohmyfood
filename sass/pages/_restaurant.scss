@@ -1,121 +1,121 @@
 .restaurant{
     display: flex;
-    flex-direction: column;
-    
-    background-color:$grey ;    
-    padding-bottom:  30px ;     
+    flex-direction: column;    
+    background-color:$grey ;  
+    padding:0 10px 30px 10px;          
     @include tablet {
-        width:99%;
+        width:100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
     } 
     &__bloc{
-        width:33%;
-    }       
-        &__title{
-            
-            & h1{           
-            text-transform: uppercase;
-            font-family:'shrikhand', sans-serif;
-            font-size: 20px;
-            margin-left: 15px;
-            }       
+        width:100%;
+        @include tablet{
+            width:32%;            
+        }        
+        &__title{ 
+            margin-left: 10px;               
+            & h2{
+                padding-top: 20px;                
+                font-size: 15px;
+                text-align:left;
+                @include desktop{
+                    font-size: $f-s-titre-desktop;
+                }
+                & span{
+                font-family: sans-serif;
+                text-transform: uppercase;
+                font-weight: 100;
+                }
+            }          
         }
-        &__bloc-part{    
-            width:100%;    
+        & .restaurant__bloc-part{    
+            width:100%;              
             box-sizing: border-box;        
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
             opacity: 1;
-            transform: translateY(0);  
-            margin: 0 15px;   
-        @include tablet {
-            margin:0 5px;
-        }          
-        & h2{padding-top: 20px;
-            font-size: 15px;
-            text-align:left
-        }
-        & span{
-            font-family: sans-serif;
-            text-transform: uppercase;
-            font-weight: 100;
-        }
-        & .part-list {
-            display: flex;
-            justify-content: space-between;
-            position:relative;
-            background: $white;
-            width: 30vw;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            @include case-shadow;
-            margin-bottom: 20px;            
-            padding: 5px 0px 8px 15px;
-            line-height: 20px;  
-            @include tablet {
-            font-size: 25px;            
-            }           
+            transform: translateY(0);          
+            & .part-list {
+                position: relative;
+                padding: 10px;;
+                background: $white;
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                @include case-shadow;                
+                display: flex;
+                justify-content: space-between; 
+                padding: 15px;
+                margin:10px 0;
+                line-height: 20px;  
                 &:hover {
-                    cursor: pointer;   
-                    & .select{
-                        width:80% ;
-                        transition: width 800ms  ease-in-out;
-                    }                 
+                    cursor: pointer;
+                    & .part-list__complement{
+                        width:50%;
+                        transition: 900ms 200ms ease-in-out; 
+                    }   
                     & .price{
-                        transform: translateX(-70px);                        
+                        transform: translateX(-70px);  
+                        transition: 900ms 200ms ease-in-out;                      
                     }
                     & .anim__container{
                         opacity: 1;
                         transform: translateX(-50px);   
-                        transition:transform 1000ms ease-in-out;                     
+                        transition: 900ms 200ms ease-in-out;                     
                     }                  
                     & .fas{
                         transform: rotate(360deg);
                     }
-                }            
-                & .select{ 
-                        width:100%;
-                        transition: width 1000ms  ease-in-out;
-                    & h3{                        
-                        margin-top: 5px;
+                } 
+                &__complement{ 
+                    width:90%; 
+                    transition: 900ms 200ms ease-in-out;  
+                    & h3{
+                        font-size: $f-s-titre;
                         overflow:hidden;
-                        white-space: nowrap;
                         text-overflow: ellipsis;
-                        font-size:13px;
-                        @include tablet {
-                            font-size:17px;   
+                        white-space: nowrap;
+                        @include tablet{
+                            font-size: $f-s-titre-tablet;
                         }
-                    }
+                        @include desktop{
+                            font-size: $f-s-titre-desktop;
+                        }
+                    }                 
                     & p{
-                        font-size: 13px;
-                        padding-bottom: 5px;
+                        font-size: $f-s-sous-titre;
+                        padding-right: 20px;                    
                         overflow:hidden;
                         text-overflow: ellipsis;
                         white-space: nowrap;
                         @include tablet {
-                            font-size: 15px;
-                        }
-                        @include tablet {
-                            font-size: 11px;
-                        }
-                        span {
-                            padding-right:  5px;
-                        }
-                        &  .price{
-                            position: absolute;
-                            right: 10px;               
-                            transform-origin: right;
-                            font-weight: bold; 
-                            transition:transform 1000ms 200ms ease-in-out ;    
-                                                    
-                        }
+                            font-size: $f-s-sous-titre-tablet;  
+                            padding:0;                      
+                            } 
+                        @include desktop{
+                            font-size: $f-s-sous-titre-desktop;
+                        }                       
+                    }                     
+                } 
+                & .price{
+                    font-size: $f-s-sous-titre;
+                    padding-top:20px;
+                    margin-right:  5px; 
+                    transform: translateX(0);
+                    transition: 900ms 200ms ease-in-out;
+                    @include tablet{
+                        font-size:$f-s-sous-titre-tablet;
                     }
-            }    
-        }    
-    } 
+                    @include desktop{
+                        font-size: $f-s-sous-titre-desktop;
+                    }
+                }   
+            } 
+        } 
+    }      
 }

@@ -1,9 +1,11 @@
 footer{
-    width:100%;
     background-color: #353535;
     color:$white;
     margin-top:60px;
-    
+    padding-left:20px;
+    @include tablet{
+        padding:0;
+    }
     & .fas{
         padding-left:0;
         padding-right:10px;
@@ -30,11 +32,12 @@ footer{
         }
     } 
     @include tablet {
-        font-size: 25px;
+        font-size: $f-s-titre-tablet;
         font-family: $Text;
         padding-bottom: 40px; 
-    } 
-    @include tablet {
         text-align: center;
+    } 
+    @include desktop {
+        font-size: $f-s-titre-desktop;
     }
 }

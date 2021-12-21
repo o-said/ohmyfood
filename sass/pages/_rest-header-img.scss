@@ -1,8 +1,7 @@
 .rest-header{ 
     position:relative;
     width:100%;
-    height: 255px;
-    
+    height: 255px;    
     &__img{  
         position: absolute;            
         top:0;
@@ -29,8 +28,7 @@
         & h1{
             margin-left:20px;
             font-family:'shrikhand', sans-serif;
-            font-size: 28px;
-            
+            font-size: 28px;            
             & span{
                 text-transform:uppercase;
                 font-family: 'Shrikhand',sans-serif;

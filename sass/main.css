@@ -295,6 +295,18 @@ body, html {
   -webkit-text-fill-color: transparent;
 }
 
+@media (min-width: 800px) {
+  .icon .heart-icon .fas {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .icon .heart-icon .fas {
+    font-size: 30px;
+  }
+}
+
 .icon .heart-icon .far {
   color: #101010;
   z-index: 1;
@@ -622,12 +634,14 @@ footer li span {
 @media (min-width: 800px) {
   .bloc-menu__menu .new {
     right: 0.6em;
+    font-size: 11px;
   }
 }
 
 @media (min-width: 1024px) {
   .bloc-menu__menu .new {
     right: 1em;
+    font-size: 15px;
   }
 }
 

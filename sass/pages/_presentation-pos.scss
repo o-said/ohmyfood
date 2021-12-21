@@ -2,8 +2,7 @@
     text-align: center;
     padding-top: 20px; 
     padding-bottom: 20px;
-    background-color: $grey;  
-      
+    background-color: $grey;     
     & h2{
         padding: 20px 0px;
         font-size:$f-s-titre;
@@ -33,17 +32,16 @@
             line-height: 50px;
             color:$white;
             text-align: center;
-        
-        & p{
-            padding: 0 10px;
-            font-size: $f-s-titre;
-            @include tablet{
-                font-size: $f-s-titre-tablet;
-            }
-            @include desktop{
-                font-size:$f-s-titre-desktop;
+            & p{
+                padding: 0 10px;
+                font-size: $f-s-titre;
+                @include tablet{
+                    font-size: $f-s-titre-tablet;
+                }
+                @include desktop{
+                    font-size:$f-s-titre-desktop;
+                }
             }
         }
-    }
     }
 }    

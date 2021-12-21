@@ -1,48 +1,54 @@
- .icon{
-        width:20%;
+.icon{
+    width:20%;
+    @include flex-center;
+    & .heart-icon{
+        width:43px;
+        height:43px;
         @include flex-center;
-        & .heart-icon{
-            width:43px;
-            height:43px;
-            @include flex-center;
-            @include button-val;
-            &  .fas{                                                 
-                opacity:0;
-                z-index: 1;                   
-                position: absolute;
-                cursor:pointer;
-                transform: scale(0);
-                transform-origin: 50% bottom;
-                font-size: 30px;
-                background: -webkit-gradient(linear, left top, left bottom, from($Primaire), to($Secondaire));
-                -webkit-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;                    
+        @include button-val;
+        &  .fas{                                                 
+            opacity:0;
+            z-index: 1;                   
+            position: absolute;
+            cursor:pointer;
+            transform: scale(0);
+            transform-origin: 50% bottom;
+            font-size: 30px;
+            background: -webkit-gradient(linear, left top, left bottom, from($Primaire), to($Secondaire));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            @include tablet{
+                font-size: 25px;
             }   
-            & .far{
-                color:$tblack;
-                z-index: 1;
+            @include desktop{
+                font-size:30px;
+            }                
+        }   
+        & .far{
+            color:$tblack;
+            z-index: 1;
+            font-size: 30px;
+            opacity:1; 
+            cursor: pointer;  
+            @include tablet {
+                font-size: 25px;
+                right:1em;
+                bottom:1em;
+            }   
+            @include desktop {
                 font-size: 30px;
-                opacity:1; 
-                cursor: pointer;  
-                @include tablet {
-                    font-size: 25px;
-                    right:1em;
-                    bottom:1em;
-                }   
-                @include desktop {
-                    font-size: 30px;
-                    right:0.95em;
-                    bottom:1.2em;
-                }              
-            } 
-            &:hover > .fas{
-                animation: appear 1000ms   ease-in-out;
-                animation-fill-mode: forwards;                                          
-            }
-            &:hover >.far {
-                animation: disappear 1000ms  ease-in-out;
-                animation-fill-mode: forwards;                                                 
-            }                   
+                right:0.95em;
+                bottom:1.2em;
+            }              
+        } 
+        &:hover > .fas{
+            animation: appear 1000ms   ease-in-out;
+            animation-fill-mode: forwards;                                          
         }
+        &:hover >.far {
+            animation: disappear 1000ms  ease-in-out;
+            animation-fill-mode: forwards;                                                 
+        }                   
     }
+}

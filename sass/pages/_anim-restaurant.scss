@@ -6,8 +6,7 @@
         box-shadow: 2px 4px 8px 3px #e4e4e7;
         border-radius: 0 20px 20px 0;
         height: 100%;
-        width: 50px;
-        
+        width: 50px;        
         right:-50px;
         top:0px;
         opacity: 0;
@@ -25,13 +24,13 @@
         height: 20px;        
     }    
     &__icon {
-            width:15px;
-            color:$Tertiaire;
-            font-size: 15px;
-            padding:2px;
-            transform-origin: 150% 50%;
-            .fas{                
-                transition:transform 800ms 200ms ease-in-out ;
-            }           
-        }
+        width:15px;
+        color:$Tertiaire;
+        font-size: 15px;
+        padding:2px;
+        transform-origin: 150% 50%;
+        .fas{                
+            transition:transform 800ms 200ms ease-in-out ;
+        }           
+    }
 } 

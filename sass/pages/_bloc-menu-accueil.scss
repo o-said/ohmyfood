@@ -1,18 +1,20 @@
 .bloc-menu{    
     background-color: $grey;    
+margin:  0;
     @include tablet{
         text-align: center;
-        margin:0 auto;
+        margin:0px auto;
         display:flex;
         @include desktop {            
             text-align: center;            
         }
     }
-    &__menu{
+    &__menu{   
+        padding:5px 0 30px 0;     
         position:relative;
         border-radius: 10px;
         width:90%;        
-        margin:20px auto ;        
+        margin:0px auto ;        
         @include tablet{
             width:260px;
         }

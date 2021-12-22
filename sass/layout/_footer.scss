@@ -1,11 +1,9 @@
-footer{
+.footer{
     background-color: #353535;
     color:$white;
-    margin-top:60px;
+    margin-top: 20px;
     padding-left:20px;  
-    @include tablet{
-        margin-top:52px;
-    } 
+    
     & .fas{
         padding-left:0;
         padding-right:10px;

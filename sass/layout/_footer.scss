@@ -2,10 +2,10 @@ footer{
     background-color: #353535;
     color:$white;
     margin-top:60px;
-    padding-left:20px;
+    padding-left:20px;  
     @include tablet{
-        padding:0;
-    }
+        margin-top:52px;
+    } 
     & .fas{
         padding-left:0;
         padding-right:10px;
@@ -32,9 +32,10 @@ footer{
         }
     } 
     @include tablet {
+        padding:0;
         font-size: $f-s-titre-tablet;
         font-family: $Text;
-        padding-bottom: 40px; 
+        
         text-align: center;
     } 
     @include desktop {

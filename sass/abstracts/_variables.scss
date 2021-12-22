@@ -16,8 +16,6 @@ $f-s-sous-titre-desktop:16px;
 $f-s-titre-category:20px;
 $f-s-titre-category-tablet:17px;
 $f-s-titre-category-desktop:25px;
-$breakpoint: (
-    small:710px,
-    medium:1024px,
-    large:1600px,
-);
+$breakpoint-small:800px;
+$breakpoint-medium:1024px;
+$breakpoint-large:1600px;

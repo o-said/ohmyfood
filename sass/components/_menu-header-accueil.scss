@@ -2,10 +2,12 @@
     padding: 0 20px ;
     font-size:20px;
     text-align: left;
+    background-color: #f6f6f6;
     & h4{
         padding:55px 30px 23px 25px;
         font-size:$f-s-titre-category;
         @include tablet{
+            padding:20px 30px 5px 25px;
             text-align: center;
             font-size: $f-s-titre-category-tablet;
         }@include desktop{

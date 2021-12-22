@@ -52,10 +52,10 @@
             width:100%;
             height:175px;   
             @include tablet{
-                height:120px;
+                height:100px;
             } 
             @include desktop{
-                height:175px;
+                height:110px;
             }            
         } 
         & .description{
@@ -70,6 +70,7 @@
                     font-size: $f-s-titre;
                     @include tablet{
                         font-size: $f-s-titre-tablet;
+                        padding-top: 5px;
                     }
                     @include desktop{
                         font-size: $f-s-titre-desktop;
@@ -83,6 +84,7 @@
                     font-size: $f-s-sous-titre;
                     @include tablet{
                         font-size: $f-s-sous-titre-tablet;
+                        padding-bottom: 5px;
                     }
                     @include desktop{
                         font-size: $f-s-sous-titre-desktop

@@ -13,7 +13,7 @@
     border-radius: 20px;
 }
 @mixin button-pos{    
-        margin:0 auto 55px auto;
+        margin:0 auto 55px auto;        
         width:250px;
         height:50px;
         background: $black;
@@ -27,11 +27,11 @@
     border: none;
 }
 @mixin font-size-titre{
-    font-zize:.8em;
+    font-size:.8em;
 }
 @mixin tablet {
-    @media (min-width: 800px) { @content;}
+    @media (min-width: $breakpoint-small) { @content;}
 }
 @mixin desktop {
-    @media (min-width: 1024px) { @content;}
+    @media (min-width: $breakpoint-medium) { @content;}
 }

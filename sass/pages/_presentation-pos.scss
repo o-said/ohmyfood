@@ -1,9 +1,7 @@
 .presentation{
     text-align: center;
     padding: 20px 0 10px 0; 
-    background-color: $grey; 
-
-     
+    background-color: $grey;      
     & h2{
         padding: 20px 0px;
         font-size:$f-s-titre;
@@ -27,16 +25,16 @@
             font-size:$f-s-sous-titre-desktop;
         }
     }
-    &__button{
-        @include tablet{
-            margin:0 auto 30px auto;
-        }
-        @include button-pos;       
+    &__button{ 
+               
         & .btn{
+            margin:0 auto 30px auto;
+            @include button-pos;
             vertical-align: middle;
             line-height: 50px;
             color:$white;
             text-align: center;
+            width:250px;
             & p{
                 padding: 0 10px;
                 font-size: $f-s-titre;

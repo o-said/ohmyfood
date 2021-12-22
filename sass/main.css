@@ -204,18 +204,17 @@ body, html {
 }
 
 .presentation__button {
-  margin: 0 auto 55px auto;
-  width: 250px;
-  height: 50px;
-  background: #000;
-  background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
-  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
-  border-radius: 50px;
-  -webkit-box-shadow: 0px 3px 8px #808080;
-          box-shadow: 0px 3px 8px #808080;
+  background-color: #f6f6f6;
+  padding-bottom: 20px;
 }
 
-.presentation__button:hover {
+@media (min-width: 800px) {
+  .presentation__button {
+    width: 100%;
+  }
+}
+
+.presentation__button:hover .btn {
   -webkit-filter: brightness(1.15);
           filter: brightness(1.15);
   -webkit-box-shadow: 0px 3px 8px #393939;
@@ -429,7 +428,6 @@ body, html {
 .footer {
   background-color: #353535;
   color: #fff;
-  margin-top: 20px;
   padding-left: 20px;
 }
 
@@ -975,7 +973,8 @@ body, html {
   }
 }
 
-.presentation__button {
+.presentation__button .btn {
+  margin: 0 auto 30px auto;
   margin: 0 auto 55px auto;
   width: 250px;
   height: 50px;
@@ -985,19 +984,11 @@ body, html {
   border-radius: 50px;
   -webkit-box-shadow: 0px 3px 8px #808080;
           box-shadow: 0px 3px 8px #808080;
-}
-
-@media (min-width: 800px) {
-  .presentation__button {
-    margin: 0 auto 30px auto;
-  }
-}
-
-.presentation__button .btn {
   vertical-align: middle;
   line-height: 50px;
   color: #fff;
   text-align: center;
+  width: 250px;
 }
 
 .presentation__button .btn p {

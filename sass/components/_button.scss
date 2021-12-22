@@ -1,6 +1,10 @@
 .presentation__button{
-@include button-pos;
-    &:hover {
+    background-color: #f6f6f6; 
+    padding-bottom: 20px; 
+    @include tablet{
+        width:100%;         
+    }
+    &:hover .btn {
         filter:brightness(1.15);
         box-shadow:0px 3px 8px #393939;
         cursor:pointer;

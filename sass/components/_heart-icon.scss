@@ -22,7 +22,7 @@
                 font-size: 25px;
             }   
             @include desktop{
-                font-size:30px;
+                font-size:25px;
             }                
         }   
         & .far{
@@ -37,7 +37,7 @@
                 bottom:1em;
             }   
             @include desktop {
-                font-size: 30px;
+                font-size: 25px;
                 right:0.95em;
                 bottom:1.2em;
             }              

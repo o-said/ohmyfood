@@ -25,8 +25,7 @@
             font-size:$f-s-sous-titre-desktop;
         }
     }
-    &__button{ 
-               
+    &__button{                
         & .btn{
             margin:0 auto 30px auto;
             @include button-pos;

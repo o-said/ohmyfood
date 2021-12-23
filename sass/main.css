@@ -203,25 +203,6 @@ body, html {
   font-family: 'Roboto', sans-serif;
 }
 
-.presentation__button {
-  background-color: #f6f6f6;
-  padding-bottom: 20px;
-}
-
-@media (min-width: 800px) {
-  .presentation__button {
-    width: 100%;
-  }
-}
-
-.presentation__button:hover .btn {
-  -webkit-filter: brightness(1.15);
-          filter: brightness(1.15);
-  -webkit-box-shadow: 0px 3px 8px #393939;
-          box-shadow: 0px 3px 8px #393939;
-  cursor: pointer;
-}
-
 .header-restaurant .arrow {
   position: absolute;
   font-size: 20px;
@@ -971,6 +952,17 @@ body, html {
   }
 }
 
+.presentation__button {
+  background-color: #f6f6f6;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 800px) {
+  .presentation__button {
+    width: 100%;
+  }
+}
+
 .presentation__button .btn {
   margin: 0 auto 30px auto;
   margin: 0 auto 55px auto;
@@ -986,6 +978,14 @@ body, html {
   color: #fff;
   text-align: center;
   width: 250px;
+}
+
+.presentation__button .btn:hover {
+  -webkit-filter: brightness(1.15);
+          filter: brightness(1.15);
+  -webkit-box-shadow: 0px 3px 8px #393939;
+          box-shadow: 0px 3px 8px #393939;
+  cursor: pointer;
 }
 
 .presentation__button .btn p {

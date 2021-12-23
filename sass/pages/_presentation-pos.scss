@@ -25,7 +25,12 @@
             font-size:$f-s-sous-titre-desktop;
         }
     }
-    &__button{                
+    &__button{ 
+        background-color: $grey; 
+        padding-bottom: 20px; 
+        @include tablet{
+            width:100%;         
+        }
         & .btn{
             margin:0 auto 30px auto;
             @include button-pos;
@@ -34,6 +39,11 @@
             color:$white;
             text-align: center;
             width:250px;
+            &:hover  {
+                filter:brightness(1.15);
+                box-shadow:0px 3px 8px $shadow;
+                cursor:pointer;
+                }
             & p{
                 padding: 0 10px;
                 font-size: $f-s-titre;
@@ -46,4 +56,4 @@
             }
         }
     }
-}    
+}

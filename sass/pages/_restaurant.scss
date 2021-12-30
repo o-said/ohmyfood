@@ -14,14 +14,29 @@
         @include tablet{
             width:32%;            
         }        
-        &__title{ 
-            margin-left: 10px;               
+        &__title{                           
             & h2{
+                position:relative;
                 padding-top: 20px;                
                 font-size: 15px;
                 text-align:left;
+                margin-bottom: 10px;
                 @include desktop{
                     font-size: $f-s-titre-desktop;
+                }
+                &::after{
+                    content:"";
+                    position: absolute;
+                    z-index:15;
+                    left:0;                    
+                    bottom:-22px;
+                    height:3px;
+                    width:40px;
+                    background:  $Tertiaire;
+                    margin:5px 0 15px 0;   
+                    @include desktop{
+                        width:50px;
+                    }   
                 }
                 & span{
                 font-family: sans-serif;
@@ -75,7 +90,8 @@
                 &__complement{ 
                     width:90%; 
                     transition: 900ms 200ms ease-in-out;  
-                    & h3{
+                    & h3{font-family: $Text;
+                        font-weight: bold;
                         font-size: $f-s-titre;
                         overflow:hidden;
                         text-overflow: ellipsis;
@@ -88,6 +104,8 @@
                         }
                     }                 
                     & p{
+                        font-family: $Text;
+                        font-weight: 100;
                         font-size: $f-s-sous-titre;
                         padding-right: 20px;                    
                         overflow:hidden;

@@ -388,13 +388,13 @@ body, html {
 }
 
 .menu-header h4 {
-  padding: 55px 30px 23px 25px;
+  padding: 55px 30px 23px 0px;
   font-size: 20px;
 }
 
 @media (min-width: 800px) {
   .menu-header h4 {
-    padding: 20px 30px 5px 25px;
+    padding: 20px 30px 5px 0px;
     text-align: center;
     font-size: 17px;
   }
@@ -546,13 +546,18 @@ body, html {
   transition: transform 800ms 200ms ease-in-out, -webkit-transform 800ms 200ms ease-in-out;
 }
 
-.bloc-menu {
+.main-menu {
+  background-color: #f6f6f6;
+  padding: 5px 0;
+}
+
+.main-menu .bloc-menu {
   background-color: #f6f6f6;
   margin: 0;
 }
 
 @media (min-width: 800px) {
-  .bloc-menu {
+  .main-menu .bloc-menu {
     text-align: center;
     margin: 0px auto;
     display: -webkit-box;
@@ -562,32 +567,33 @@ body, html {
 }
 
 @media (min-width: 800px) and (min-width: 1024px) {
-  .bloc-menu {
+  .main-menu .bloc-menu {
     text-align: center;
   }
 }
 
-.bloc-menu__menu {
-  padding: 5px 0 30px 0;
+.main-menu .bloc-menu__menu {
+  margin: 15px auto;
   position: relative;
   border-radius: 10px;
   width: 90%;
-  margin: 0px auto;
+  -webkit-box-shadow: 2px 2px 9px #aaa;
+          box-shadow: 2px 2px 9px #aaa;
 }
 
 @media (min-width: 800px) {
-  .bloc-menu__menu {
+  .main-menu .bloc-menu__menu {
     width: 260px;
   }
 }
 
 @media (min-width: 1024px) {
-  .bloc-menu__menu {
+  .main-menu .bloc-menu__menu {
     width: 380px;
   }
 }
 
-.bloc-menu__menu .new {
+.main-menu .bloc-menu__menu .new {
   padding: 8px;
   border-radius: 5px;
   font-size: 13px;
@@ -607,20 +613,20 @@ body, html {
 }
 
 @media (min-width: 800px) {
-  .bloc-menu__menu .new {
+  .main-menu .bloc-menu__menu .new {
     right: 0.6em;
     font-size: 11px;
   }
 }
 
 @media (min-width: 1024px) {
-  .bloc-menu__menu .new {
+  .main-menu .bloc-menu__menu .new {
     right: 1em;
     font-size: 15px;
   }
 }
 
-.bloc-menu__menu img {
+.main-menu .bloc-menu__menu img {
   -o-object-fit: cover;
      object-fit: cover;
   border-top-left-radius: 10px;
@@ -630,18 +636,18 @@ body, html {
 }
 
 @media (min-width: 800px) {
-  .bloc-menu__menu img {
+  .main-menu .bloc-menu__menu img {
     height: 100px;
   }
 }
 
 @media (min-width: 1024px) {
-  .bloc-menu__menu img {
+  .main-menu .bloc-menu__menu img {
     height: 110px;
   }
 }
 
-.bloc-menu__menu .description {
+.main-menu .bloc-menu__menu .description {
   background-color: #fff;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -650,35 +656,40 @@ body, html {
   display: flex;
 }
 
-.bloc-menu__menu .description .name {
+.main-menu .bloc-menu__menu .description .name {
   width: 80%;
 }
 
-.bloc-menu__menu .description .name h2 {
+.main-menu .bloc-menu__menu .description .name h2 {
+  font-family: "Roboto";
   padding: 20px 0 10px 15px;
   font-size: 17px;
+  font-weight: bold;
   color: #101010;
 }
 
 @media (min-width: 800px) {
-  .bloc-menu__menu .description .name h2 {
+  .main-menu .bloc-menu__menu .description .name h2 {
     font-size: 13px;
     padding-top: 5px;
   }
 }
 
 @media (min-width: 1024px) {
-  .bloc-menu__menu .description .name h2 {
+  .main-menu .bloc-menu__menu .description .name h2 {
     font-size: 18px;
   }
 }
 
-.bloc-menu__menu .description .name h2 span {
+.main-menu .bloc-menu__menu .description .name h2 span {
   text-transform: uppercase;
 }
 
-.bloc-menu__menu .description .name h3 {
-  font-size: 13px;
+.main-menu .bloc-menu__menu .description .name h3 {
+  font-size: 17px;
+  border-bottom-left-radius: 10px;
+  font-weight: 100;
+  font-family: "Roboto";
   padding-bottom: 20px;
   padding-left: 15px;
   color: #101010;
@@ -687,19 +698,19 @@ body, html {
 }
 
 @media (min-width: 800px) {
-  .bloc-menu__menu .description .name h3 {
-    font-size: 10px;
+  .main-menu .bloc-menu__menu .description .name h3 {
+    font-size: 13px;
     padding-bottom: 5px;
   }
 }
 
 @media (min-width: 1024px) {
-  .bloc-menu__menu .description .name h3 {
-    font-size: 16px;
+  .main-menu .bloc-menu__menu .description .name h3 {
+    font-size: 18px;
   }
 }
 
-.bloc-menu__menu .description button {
+.main-menu .bloc-menu__menu .description button {
   background-color: Transparent;
   background-repeat: no-repeat;
   border: none;
@@ -935,20 +946,20 @@ body, html {
 
 .presentation h3 {
   padding: 0 10px 35px 10px;
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 200;
 }
 
 @media (min-width: 800px) {
   .presentation h3 {
-    font-size: 10px;
+    font-size: 13px;
     padding-bottom: 20px;
   }
 }
 
 @media (min-width: 1024px) {
   .presentation h3 {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -1113,19 +1124,35 @@ body, html {
   }
 }
 
-.restaurant__bloc__title {
-  margin-left: 10px;
-}
-
 .restaurant__bloc__title h2 {
+  position: relative;
   padding-top: 20px;
   font-size: 15px;
   text-align: left;
+  margin-bottom: 10px;
 }
 
 @media (min-width: 1024px) {
   .restaurant__bloc__title h2 {
     font-size: 18px;
+  }
+}
+
+.restaurant__bloc__title h2::after {
+  content: "";
+  position: absolute;
+  z-index: 15;
+  left: 0;
+  bottom: -22px;
+  height: 3px;
+  width: 40px;
+  background: #99E2D0;
+  margin: 5px 0 15px 0;
+}
+
+@media (min-width: 1024px) {
+  .restaurant__bloc__title h2::after {
+    width: 50px;
   }
 }
 
@@ -1216,6 +1243,8 @@ body, html {
 }
 
 .restaurant__bloc .restaurant__bloc-part .part-list__complement h3 {
+  font-family: "Roboto";
+  font-weight: bold;
   font-size: 17px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1235,7 +1264,9 @@ body, html {
 }
 
 .restaurant__bloc .restaurant__bloc-part .part-list__complement p {
-  font-size: 13px;
+  font-family: "Roboto";
+  font-weight: 100;
+  font-size: 17px;
   padding-right: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1244,19 +1275,19 @@ body, html {
 
 @media (min-width: 800px) {
   .restaurant__bloc .restaurant__bloc-part .part-list__complement p {
-    font-size: 10px;
+    font-size: 13px;
     padding: 0;
   }
 }
 
 @media (min-width: 1024px) {
   .restaurant__bloc .restaurant__bloc-part .part-list__complement p {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
 .restaurant__bloc .restaurant__bloc-part .part-list .price {
-  font-size: 13px;
+  font-size: 17px;
   padding-top: 20px;
   margin-right: 5px;
   -webkit-transform: translateX(0);
@@ -1267,25 +1298,13 @@ body, html {
 
 @media (min-width: 800px) {
   .restaurant__bloc .restaurant__bloc-part .part-list .price {
-    font-size: 10px;
+    font-size: 13px;
   }
 }
 
 @media (min-width: 1024px) {
   .restaurant__bloc .restaurant__bloc-part .part-list .price {
-    font-size: 16px;
-  }
-}
-
-.trait {
-  width: 40px;
-  border: 1.5px solid #99E2D0;
-  margin: 5px 0 15px 0;
-}
-
-@media (min-width: 1024px) {
-  .trait {
-    width: 50px;
+    font-size: 18px;
   }
 }
 

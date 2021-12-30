@@ -4,10 +4,10 @@
     text-align: left;
     background-color: $grey;
     & h4{
-        padding:55px 30px 23px 25px;
+        padding:55px 30px 23px 0px;
         font-size:$f-s-titre-category;
         @include tablet{
-            padding:20px 30px 5px 25px;
+            padding:20px 30px 5px 0px;
             text-align: center;
             font-size: $f-s-titre-category-tablet;
         }@include desktop{

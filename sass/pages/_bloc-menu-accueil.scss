@@ -1,106 +1,115 @@
-.bloc-menu{    
-    background-color: $grey;    
-    margin:  0;
-    @include tablet{
-        text-align: center;
-        margin:0px auto;
-        display:flex;
-        @include desktop {            
-            text-align: center;            
-        }
-    }
-    &__menu{   
-        padding:5px 0 30px 0;     
-        position:relative;
-        border-radius: 10px;
-        width:90%;        
-        margin:0px auto ;        
+.main-menu{
+    background-color: $grey;
+    padding: 5px 0;
+    .bloc-menu{         
+        background-color: $grey;    
+        margin:  0;
         @include tablet{
-            width:260px;
-        }
-        @include desktop {
-            width:380px;
-        }
-        & .new{
-            padding:8px;
-            border-radius: 5px;
-            font-size: 13px;
-            color:#008766;
-            font-family: $Text;
-            font-weight: 800;
-            top:0.80em;
-            right:0.80em;
-            float:right;
-            width:80px;
-            height:30px;
             text-align: center;
-            vertical-align: middle;
-            position: absolute;
-            z-index: 1;
-            background-color:$Tertiaire;
+            margin:0px auto;
+            display:flex;
+            @include desktop {            
+                text-align: center;            
+            }
+        }
+        &__menu{   
+            margin:15px auto ;   
+            position:relative;
+            border-radius: 10px;
+            width:90%;        
+            box-shadow: 2px 2px 9px #aaa;        
             @include tablet{
-                right:0.6em;
-                font-size: 11px;
+                width:260px;
             }
             @include desktop {
-                right: 1em;
-                font-size:15px;
+                width:380px;
             }
-        }        
-        & img{
-            object-fit: cover;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            width:100%;
-            height:175px;   
-            @include tablet{
-                height:100px;
-            } 
-            @include desktop{
-                height:110px;
-            }            
-        } 
-        & .description{
-            background-color: $white;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-            display:flex;        
-            & .name{
-                width:80%;                
-                & h2{
-                    padding:20px 0 10px 15px;
-                    font-size: $f-s-titre;
-                    @include tablet{
-                        font-size: $f-s-titre-tablet;
-                        padding-top: 5px;
-                    }
-                    @include desktop{
-                        font-size: $f-s-titre-desktop;
-                    }
-                    color:$tblack;                
-                & span{
-                    text-transform: uppercase;
-                    }
+            & .new{
+                padding:8px;
+                border-radius: 5px;
+                font-size: 13px;
+                color:#008766;
+                font-family: $Text;
+                font-weight: 800;
+                top:0.80em;
+                right:0.80em;
+                float:right;
+                width:80px;
+                height:30px;
+                text-align: center;
+                vertical-align: middle;
+                position: absolute;
+                z-index: 1;
+                background-color:$Tertiaire;
+                @include tablet{
+                    right:0.6em;
+                    font-size: 11px;
+                }
+                @include desktop {
+                    right: 1em;
+                    font-size:15px;
+                }
+            }        
+            & img{
+                object-fit: cover;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                width:100%;
+                height:175px;   
+                @include tablet{
+                    height:100px;
                 } 
-                & h3{
-                    font-size: $f-s-sous-titre;
-                    @include tablet{
-                        font-size: $f-s-sous-titre-tablet;
-                        padding-bottom: 5px;
-                    }
-                    @include desktop{
-                        font-size: $f-s-sous-titre-desktop
-                    }
-                    padding-bottom:20px;
-                    padding-left: 15px;
-                    color:$tblack;
-                    background-color: $white;                    
-                    position:relative;
-                }  
-            }   
-            & button{
-                @include button-val;
-            }                        
+                @include desktop{
+                    height:110px;
+                }            
+            } 
+            & .description{
+                background-color: $white;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                display:flex;        
+                & .name{
+                    width:80%;                
+                    & h2{
+                        font-family: $Text;
+                        padding:20px 0 10px 15px;
+                        font-size: $f-s-titre;
+                        font-weight: bold;
+                        @include tablet{
+                            font-size: $f-s-titre-tablet;
+                            padding-top: 5px;
+                        }
+                        @include desktop{
+                            font-size: $f-s-titre-desktop;
+                        }
+                        color:$tblack;                
+                    & span{
+                        text-transform: uppercase;
+                        }
+                    } 
+                    & h3{
+                        font-size: $f-s-sous-titre;
+                        border-bottom-left-radius: 10px;
+                        font-weight: 100;
+                        font-family: $Text;
+                        @include tablet{
+                            font-size: $f-s-sous-titre-tablet;
+                            padding-bottom: 5px;
+                        }
+                        @include desktop{
+                            font-size: $f-s-sous-titre-desktop
+                        }
+                        padding-bottom:20px;
+                        padding-left: 15px;
+                        color:$tblack;
+                        background-color: $white;                    
+                        position:relative;
+                    }  
+                }   
+                & button{
+                    @include button-val;
+                }                        
+            }
         }
     }
-}
+}    
